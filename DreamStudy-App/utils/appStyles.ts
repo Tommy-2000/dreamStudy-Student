@@ -144,8 +144,7 @@ export const drawerScreenOptions:
   headerShown: false
 };
 
-// Navigation Styling
-
+// Custom Navigation Components
 // withUnistyles works best for components with custom props
 // useUnistyles causes a crash when switching themes and re-rendering React Navigation components
 
@@ -253,17 +252,17 @@ export const cardStyles = StyleSheet.create(theme => ({
   },
   revisionCard: {
     borderRadius: 20,
-    shadowRadius: 20,
+    shadowRadius: 10,
     padding: 20,
     flex: 1,
-    backgroundColor: theme.colors.accents.storm
+    backgroundColor: theme.colors.accents.pumpkin
   },
   parallaxScrollCardHeader: {
     flex: 1
   },
   parallaxScrollCardBody: {
     backgroundColor: theme.colors.background,
-    borderRadius: 50,
+    borderRadius: 70,
     flex: 1,
     padding: 32,
     gap: 16

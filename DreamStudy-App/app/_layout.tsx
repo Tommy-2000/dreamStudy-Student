@@ -1,148 +1,15 @@
+import { drawerScreenOptions, RootDrawer } from '@/utils/appStyles';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { Drawer } from 'expo-router/drawer';
+import Drawer from 'expo-router/drawer';
 import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
-
-import * as Sentry from '@sentry/react-native';
-import { Tabs } from 'expo-router';
 import React from 'react';
-import { Platform } from 'react-native';
-import {
-  drawerScreenOptions,
-  RootDrawer,
-  RootTabs,
-  tabScreenOptions
-} from '../utils/appStyles';
 
-// Initialise the Sentry SDK for performance and error logging
-Sentry.init({
-  dsn: 'https://c73380ff81478f5ab63ff2684293a3e7@o4510828122996736.ingest.de.sentry.io/4510828124962896',
-
-  // Adds more context data to events (IP address, cookies, user, etc.)
-  sendDefaultPii: false, // ONLY SET THIS TO TRUE IF THE APP IS IN A TESTING ENVIRONMENT!
-
-  // Enable Logs
-  enableLogs: false,
-  enableCaptureFailedRequests: false,
-  enableAppHangTracking: false,
-  enableAppStartTracking: false,
-  integrations: [Sentry.feedbackIntegration()]
-});
-
-// Wrap the root of the app with the Sentry SDK
-export default Sentry.wrap(function RootLayout() {
-  if (Platform.OS === 'web') {
-    // If this app is running on Android or iOS, show the drawer layout
-    // Otherwise if the app is running on Web, show the Tabs layout
-    return (
-      <React.Fragment>
-        <RootTabs screenOptions={tabScreenOptions} backBehavior="fullHistory">
-          <Tabs.Screen
-            name="index"
-            options={{
-              tabBarLabel: 'Home',
-              tabBarIcon: ({ focused, color, size }) => {
-                if (focused) {
-                  return <Ionicons name="home" size={size} color={color} />;
-                } else {
-                  return (
-                    <Ionicons name="home-outline" size={size} color={color} />
-                  );
-                }
-              },
-              title: 'Home'
-            }}
-          />
-          <Tabs.Screen
-            name="revision"
-            options={{
-              tabBarIcon: ({ focused, color, size }) => {
-                if (focused) {
-                  return <Ionicons name="book" size={size} color={color} />;
-                } else {
-                  return (
-                    <Ionicons name="book-outline" size={size} color={color} />
-                  );
-                }
-              },
-              tabBarLabel: 'Revision',
-              title: 'Revision'
-            }}
-          />
-          <Tabs.Screen
-            name="notes"
-            options={{
-              tabBarIcon: ({ focused, color, size }) => {
-                if (focused) {
-                  return <Ionicons name="albums" size={size} color={color} />;
-                } else {
-                  return (
-                    <Ionicons name="albums-outline" size={size} color={color} />
-                  );
-                }
-              },
-              tabBarLabel: 'Notes',
-              title: 'Notes'
-            }}
-          />
-          <Tabs.Screen
-            name="journey"
-            options={{
-              tabBarIcon: ({ focused, color, size }) => {
-                if (focused) {
-                  return <Ionicons name="map" size={size} color={color} />;
-                } else {
-                  return (
-                    <Ionicons name="map-outline" size={size} color={color} />
-                  );
-                }
-              },
-              tabBarLabel: 'Journey',
-              title: 'Journey'
-            }}
-          />
-          <Tabs.Screen
-            name="support"
-            options={{
-              tabBarIcon: ({ focused, color, size }) => {
-                if (focused) {
-                  return <Ionicons name="help" size={size} color={color} />;
-                } else {
-                  return (
-                    <Ionicons name="help-outline" size={size} color={color} />
-                  );
-                }
-              },
-              tabBarLabel: 'Support',
-              title: 'Support'
-            }}
-          />
-          <Tabs.Screen
-            name="user"
-            options={{
-              tabBarIcon: ({ focused, color, size }) => {
-                if (focused) {
-                  return <Ionicons name="person" size={size} color={color} />;
-                } else {
-                  return (
-                    <Ionicons name="person-outline" size={size} color={color} />
-                  );
-                }
-              },
-              tabBarLabel: 'User',
-              title: 'User'
-            }}
-          />
-        </RootTabs>
-        {/* <GuideButton /> */}
-        <StatusBar style="auto" />
-      </React.Fragment>
-    );
-  }
-
+export default function NativeLayout() {
   return (
     <React.Fragment>
-      <RootDrawer screenOptions={drawerScreenOptions}>
+      <RootDrawer
+        screenOptions={drawerScreenOptions}
+        backBehavior="initialRoute">
         <Drawer.Screen
           name="index"
           options={{
@@ -228,4 +95,4 @@ export default Sentry.wrap(function RootLayout() {
       <StatusBar style="auto" />
     </React.Fragment>
   );
-});
+}

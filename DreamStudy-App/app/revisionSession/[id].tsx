@@ -2,7 +2,7 @@ import { Card } from '@/components/card';
 import { TextCard } from '@/components/textCard';
 import { useLocalSearchParams } from 'expo-router';
 
-export function RevisionSession() {
+export default function RevisionSession() {
   const { id } = useLocalSearchParams();
   return (
     <Card>

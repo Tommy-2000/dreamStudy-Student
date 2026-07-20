@@ -1,10 +1,9 @@
 import { RevisionContent } from '@/api/models';
 import { Card } from '@/components/card';
 import ParallaxScrollCard from '@/components/parallaxScrollCard';
-import ScrollCard from '@/components/scrollCard';
 import { SkiaGradientRenderer } from '@/components/skiaGradientRenderer';
 import SortableGridCard, {
-    SortableGridDropIndicator
+  SortableGridDropIndicator
 } from '@/components/sortableGridCard';
 import { TextCard } from '@/components/textCard';
 import { appStore } from '@/state/appStores';
@@ -51,17 +50,15 @@ export default function RevisionScreen() {
 
           <Card style={revisionScreenStyles.revisionFilterButtons}></Card>
           <Sortable.PortalProvider enabled={true}>
-            <ScrollCard>
-              <SortableGridCard
-                data={revisionContentMockData}
-                renderItem={renderGridItem}
-                DropIndicatorComponent={SortableGridDropIndicator}
-                keyExtractor={item => item.contentId}
-                columns={4}
-                rowGap={2}
-                columnGap={2}
-              />
-            </ScrollCard>
+            <SortableGridCard
+              data={revisionContentMockData}
+              renderItem={renderGridItem}
+              DropIndicatorComponent={SortableGridDropIndicator}
+              keyExtractor={item => item.contentId}
+              columns={4}
+              rowGap={2}
+              columnGap={2}
+            />
           </Sortable.PortalProvider>
         </ParallaxScrollCard>
       </FiberProvider>

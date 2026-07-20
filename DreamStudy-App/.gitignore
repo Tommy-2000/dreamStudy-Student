@@ -57,3 +57,6 @@ app-example
 
 # Ignore build error logs
 /errors
+
+# Ignore webpack skia web installer
+skiaWebPackInstall.js

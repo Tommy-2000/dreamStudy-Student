@@ -11,7 +11,7 @@
     "clear-cache": "expo -c",
     "prebuild": "expo prebuild --clean",
     "expo-doctor": "npx expo-doctor",
-    "skia-postinstall": "npx setup-skia-web public && node skia_postinstall.js",
+    "skia-webinstall": "npx setup-skia-web public && node skiaWebInstall.js",
     "build-android": "expo build:android",
     "build-ios": "expo build:ios",
     "build-web": "expo build:web --no-pwa"
