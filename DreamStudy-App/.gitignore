@@ -59,4 +59,7 @@ app-example
 /errors
 
 # Ignore webpack skia web installer
-skiaWebPackInstall.js
+skiaWebPackInstall.js# Reassure output directory
+
+# Ignore generated Reassure folder
+.reassure
