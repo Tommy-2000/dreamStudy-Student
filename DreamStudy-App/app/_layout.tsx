@@ -1,5 +1,5 @@
 import { drawerScreenOptions, RootDrawer } from '@/utils/appStyles';
-import Ionicons from '@expo/vector-icons/Ionicons';
+import Ionicons from '@react-native-vector-icons/ionicons';
 import Drawer from 'expo-router/drawer';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
@@ -16,11 +16,9 @@ export default function NativeLayout() {
             drawerLabel: 'Home',
             drawerIcon: ({ focused, color, size }) => {
               if (focused) {
-                return <Ionicons name="home" size={size} color={color} />;
+                return <Ionicons name="home" size={size} />;
               } else {
-                return (
-                  <Ionicons name="home-outline" size={size} color={color} />
-                );
+                return <Ionicons name="home-outline" size={size} />;
               }
             },
             title: 'Home'
@@ -32,11 +30,9 @@ export default function NativeLayout() {
             drawerLabel: 'Revision',
             drawerIcon: ({ focused, color, size }) => {
               if (focused) {
-                return <Ionicons name="book" size={size} color={color} />;
+                return <Ionicons name="book" size={size} />;
               } else {
-                return (
-                  <Ionicons name="book-outline" size={size} color={color} />
-                );
+                return <Ionicons name="book-outline" size={size} />;
               }
             },
             title: 'Revision'
@@ -48,11 +44,9 @@ export default function NativeLayout() {
             drawerLabel: 'Notes',
             drawerIcon: ({ focused, color, size }) => {
               if (focused) {
-                return <Ionicons name="albums" size={size} color={color} />;
+                return <Ionicons name="albums" size={size} />;
               } else {
-                return (
-                  <Ionicons name="albums-outline" size={size} color={color} />
-                );
+                return <Ionicons name="albums-outline" size={size} />;
               }
             },
             title: 'Notes'
@@ -64,11 +58,9 @@ export default function NativeLayout() {
             drawerLabel: 'Journey',
             drawerIcon: ({ focused, color, size }) => {
               if (focused) {
-                return <Ionicons name="map" size={size} color={color} />;
+                return <Ionicons name="map" size={size} />;
               } else {
-                return (
-                  <Ionicons name="map-outline" size={size} color={color} />
-                );
+                return <Ionicons name="map-outline" size={size} />;
               }
             },
             title: 'Journey'
@@ -79,11 +71,9 @@ export default function NativeLayout() {
           options={{
             drawerIcon: ({ focused, color, size }) => {
               if (focused) {
-                return <Ionicons name="help" size={size} color={color} />;
+                return <Ionicons name="help" size={size} />;
               } else {
-                return (
-                  <Ionicons name="help-outline" size={size} color={color} />
-                );
+                return <Ionicons name="help-outline" size={size} />;
               }
             },
             drawerLabel: 'Support',

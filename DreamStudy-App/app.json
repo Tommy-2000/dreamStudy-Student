@@ -45,6 +45,8 @@
         }
       ],
       "expo-font",
+      "@react-native-vector-icons/material-icons",
+      "@react-native-vector-icons/ionicons",
       "expo-web-browser",
       [
         "@sentry/react-native/expo",

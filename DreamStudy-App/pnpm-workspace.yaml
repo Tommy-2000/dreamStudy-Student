@@ -4,6 +4,7 @@ allowBuilds:
   '@react-native-ama/core': true
   '@sentry/cli': true
   '@shopify/react-native-skia': true
+  core-js: true
   unrs-resolver: true
 
 # Security measures to prevent any npm supply chain attacks from infecting transitive dependencies
