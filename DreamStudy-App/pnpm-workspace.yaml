@@ -15,4 +15,11 @@ minimumReleaseAge: 1440
 
 # This is required for packages installed through Expo on Android or iOS
 # Removing this will cause CMake to fail when building for Android on Windows!
+minimumReleaseAgeExclude:
+  - '@expo/cli@57.0.31'
+  - '@expo/router-server@57.0.13'
+  - babel-preset-expo@57.0.16
+  - expo@57.0.30
+  - '@expo/ui@57.0.25'
+  - expo-router@57.0.28
 nodeLinker: hoisted
