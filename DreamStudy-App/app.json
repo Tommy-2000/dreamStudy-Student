@@ -61,7 +61,8 @@
       "expo-image",
       "react-native-enriched-markdown",
       "expo-secure-store",
-      "expo-sqlite"
+      "expo-sqlite",
+      "expo-status-bar"
     ],
     "experiments": {
       "typedRoutes": true,
