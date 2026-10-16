@@ -1,7 +1,7 @@
 import { MaterialIconButtonProps } from '@/utils/types/buttonProps';
-import Octicons from '@expo/vector-icons/Octicons';
+import Ionicons from '@react-native-vector-icons/ionicons';
 import { PressableScale } from 'pressto';
-import { TextCard } from '../textCard';
+import { TextCard } from './textCard';
 
 export function MaterialIconButton({
   onPress,
@@ -19,7 +19,7 @@ export function MaterialIconButton({
       accessibilityLabel={title}
       accessibilityRole="button">
       <TextCard>
-        <Octicons name={iconName} size={iconSize} />
+        <Ionicons name={iconName} size={iconSize} />
         {title}
       </TextCard>
     </PressableScale>

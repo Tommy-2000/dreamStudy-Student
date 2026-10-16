@@ -11,7 +11,7 @@ export const studentMockData: StudentT[] = [
       'In voluptas ut ea inventore ea quia. Dolor quae saepe ullam laboriosam omnis reprehenderit. Non omnis expedita. Laboriosam rerum similique ipsam cumque quas aspernatur repellendus. Odio quis quasi quas ea placeat. Nam eos sed maxime voluptatem officiis.\n \rQui voluptatem natus natus est aut. Aliquam reiciendis neque cumque saepe distinctio voluptatem et reprehenderit. Aut voluptas harum qui. Voluptate est sed id nihil in ut. Necessitatibus unde saepe id similique.\n \rAliquam et quod est consectetur maxime eum deserunt similique. Ut quis occaecati similique molestias quod. Autem fugiat minus nobis aut cupiditate commodi blanditiis.',
     teachingGroup: 'nihil',
     revisionLevel: RevisionLevel.A_Level,
-
+    studentNotes: '',
     supportType: 'Aut rerum minus omnis error veniam.',
     supportRequired: false,
     studentYear: 40
@@ -25,6 +25,7 @@ export const studentMockData: StudentT[] = [
     teachingGroup:
       'Laborum aliquid facere. Esse accusamus vel voluptatum tenetur consequatur ut. Qui eum fuga voluptatem.',
     revisionLevel: RevisionLevel.A_Level,
+    studentNotes: '',
     supportType:
       'Fuga impedit labore. Voluptas dolorem reprehenderit ex. Maiores voluptatum quo incidunt culpa magni aperiam sequi. Iste vitae quas atque laboriosam vel. Distinctio modi voluptas aperiam necessitatibus quia consequatur corrupti dolorem temporibus. Soluta in nostrum et totam maxime velit nihil amet.',
     supportRequired: false,
@@ -38,6 +39,7 @@ export const studentMockData: StudentT[] = [
       'Sit cupiditate maiores minima maxime est est dignissimos nostrum.\nLaboriosam temporibus atque quaerat optio iure est est.\nNesciunt aut velit cupiditate excepturi est eius sed.\nAt laborum ut perspiciatis voluptatem vel aliquam.\nVoluptatem tempora itaque fugit.',
     teachingGroup: 'et',
     revisionLevel: RevisionLevel.A_Level,
+    studentNotes: '',
     supportType:
       'Quae voluptatem qui qui omnis soluta facere. Labore laboriosam fugit quasi accusamus repellendus accusamus porro culpa. Minima animi molestias quos velit error consequatur voluptatem. Quo officia quia ut commodi fuga maiores et. Ipsum soluta praesentium iusto voluptas sit recusandae non laborum. Aspernatur consectetur quia.',
     supportRequired: false,
@@ -52,6 +54,7 @@ export const studentMockData: StudentT[] = [
       'Ipsa libero aut totam et ipsa adipisci omnis pariatur. Libero repellendus molestiae consequatur. Eum unde voluptatem nulla. Ut libero non impedit iusto.',
     teachingGroup: 'quo',
     revisionLevel: RevisionLevel.A_Level,
+    studentNotes: '',
     supportType:
       'Aut ut ut qui omnis porro natus. Rerum nihil rerum. Dolores expedita tempore et aperiam in sapiente. Laborum ut consequatur. Rerum in praesentium et modi sapiente et. Voluptatem aperiam recusandae amet est esse.',
     supportRequired: true,
@@ -65,6 +68,7 @@ export const studentMockData: StudentT[] = [
     teachingGroup:
       'Sit accusamus aliquid vitae cupiditate accusamus inventore architecto.\nEligendi fugit dolore nulla aut soluta at.',
     revisionLevel: RevisionLevel.A_Level,
+    studentNotes: '',
     supportType: 'Quaerat doloribus repudiandae.',
     supportRequired: false,
     studentYear: 82
@@ -80,7 +84,7 @@ export const studentMockData: StudentT[] = [
     teachingGroup:
       'Autem at consequatur culpa praesentium repudiandae.\nEst cupiditate quo reprehenderit.',
     revisionLevel: RevisionLevel.A_Level,
-
+    studentNotes: '',
     supportType:
       'Aut quo et et consequatur inventore odio omnis non. Rerum ipsa deleniti cumque fuga distinctio voluptas quis harum illo. Nemo autem quidem sit facilis ducimus officiis delectus ducimus.\n \rFugit autem consequatur fuga ut sit debitis accusantium nulla. Dolorem error perspiciatis nihil odio rem. Enim dolor assumenda ab beatae ipsum et. Aut hic voluptatem consequatur deserunt eos expedita. Recusandae occaecati omnis veniam quidem.\n \rVoluptas tempora qui qui nihil. Dolor deleniti sequi. Officia animi delectus. Est necessitatibus quaerat sunt rerum iure qui.',
     supportRequired: false,
@@ -96,6 +100,7 @@ export const studentMockData: StudentT[] = [
       'Reprehenderit est quia. Rerum tenetur fugit aut qui et asperiores aut. Magni at non eius consequatur alias fuga ad voluptatibus iusto. Occaecati velit voluptatibus enim numquam aut quis non. Sit a soluta repellendus non aut vel.',
     teachingGroup: 'distinctio sit dolor',
     revisionLevel: RevisionLevel.A_Level,
+    studentNotes: '',
     supportType:
       'Totam quisquam necessitatibus molestiae distinctio laboriosam iure. Mollitia inventore nesciunt. Earum dolor consectetur dolor magni. Aspernatur ipsa veniam amet quia repellat vero molestiae alias occaecati. Ullam rem dicta est reiciendis impedit soluta. Et omnis ut sapiente quod.\n \rExpedita dolorem velit et. Qui velit voluptatum. Veritatis eos pariatur odit assumenda soluta optio aut voluptatem. Laudantium ea voluptatibus saepe facere. Omnis perspiciatis tempora velit impedit. Dolorem labore aliquid eligendi.\n \rIncidunt odio eligendi adipisci tempora odio vitae. Doloribus minus nemo est. Sint voluptates culpa nesciunt assumenda minus dicta aspernatur at.',
     supportRequired: false,
@@ -111,6 +116,7 @@ export const studentMockData: StudentT[] = [
     teachingGroup:
       'Commodi amet blanditiis. Itaque similique aliquid saepe et. Iusto in voluptates. Quo dolore rerum ut dolore est sequi neque sit eveniet. Modi odio architecto ullam.',
     revisionLevel: RevisionLevel.A_Level,
+    studentNotes: '',
     supportType:
       'Et mollitia quas et error rerum. Tempora et vel et incidunt. Rerum quia facere expedita quod asperiores. Et unde praesentium laboriosam quia labore autem accusamus et. Perspiciatis adipisci voluptatibus nihil.',
     supportRequired: false,
@@ -126,6 +132,7 @@ export const studentMockData: StudentT[] = [
     teachingGroup:
       'Esse ea sequi eius velit corporis exercitationem aut. Enim quaerat et ea. Rerum eum occaecati tenetur ratione recusandae. Dolor accusamus laboriosam harum quisquam odio dignissimos. Ipsam quia cum sunt ut. Cum culpa sunt odio libero sunt ipsa tempora eveniet.\n \rMinus rerum sit non a dolor dolor qui. Aperiam ex quidem provident omnis sapiente non est voluptate quidem. Eos est rerum soluta omnis doloremque.\n \rQuis odio tempore fugit ut voluptatem nemo sapiente. Accusantium et culpa modi ea officiis possimus expedita et nobis. Veniam aperiam est perspiciatis et ea dolorum culpa deleniti est. Provident est exercitationem non ut illum ut tempore similique minima. Ab facilis hic ratione nihil.',
     revisionLevel: RevisionLevel.A_Level,
+    studentNotes: '',
     supportType: 'Fuga earum ut laudantium est fuga debitis.',
     supportRequired: true,
     studentYear: 125
@@ -140,6 +147,7 @@ export const studentMockData: StudentT[] = [
     teachingGroup:
       'Aut repellendus voluptatem. Asperiores aliquid itaque. Quis nam velit qui eum.',
     revisionLevel: RevisionLevel.A_Level,
+    studentNotes: '',
     supportType: 'Et ut eos sapiente quisquam nisi qui odio eligendi.',
     supportRequired: true,
     studentYear: 74
@@ -288,12 +296,11 @@ export const teacherMockData: TeacherT[] = [
 export const revisionContentMockData: RevisionContent[] = [
   {
     contentId: 123,
-    revisionTitle:
-      'Rerum inventore impedit ad aut quis maxime. Omnis quia ut et minus fuga. Quia consequuntur dolore aperiam corrupti. Magnam voluptas cum quo.',
-    revisionDetails:
+    revisionTitle: 'Rerum',
+    revisionOverview:
       'Non repudiandae accusamus sed id ut quod fugiat hic. Omnis eum et sed. Omnis error aperiam neque optio. Porro est qui. Quam quis iste autem architecto soluta perspiciatis. Pariatur iusto placeat reiciendis repellat dolor.',
-    revisionContent: 'Est id quod et similique molestiae.',
-    isSupportAvailable: true,
+    revisionContent: {},
+    hasSupportAvailable: true,
     revisionSubject: RevisionSubject.English_Lan,
     revisionLevel: RevisionLevel.A_Level,
     dateUploaded: 'sequi maxime culpa',
@@ -302,11 +309,10 @@ export const revisionContentMockData: RevisionContent[] = [
   },
   {
     contentId: 45,
-    revisionTitle:
-      'Sapiente et accusamus odio inventore ea optio.\nPraesentium ut consequatur asperiores adipisci impedit voluptatem molestias minima optio.\nEa repellendus repellendus dignissimos laborum vel quod dicta magnam.\nIpsum neque autem in.',
-    revisionDetails: 'est',
-    revisionContent: 'velit et eum',
-    isSupportAvailable: false,
+    revisionTitle: 'Sapiente',
+    revisionOverview: 'est',
+    revisionContent: {},
+    hasSupportAvailable: false,
     revisionSubject: RevisionSubject.English_Lan,
     revisionLevel: RevisionLevel.A_Level,
     dateUploaded:
@@ -316,12 +322,10 @@ export const revisionContentMockData: RevisionContent[] = [
   },
   {
     contentId: 107,
-    revisionTitle:
-      'Dolores in et voluptatem. Laudantium dicta ipsam dolores molestiae aliquam sed. Sit sed aut ab qui quia et labore blanditiis. Laborum nulla eligendi repellendus mollitia veniam aut dolorem non. Iusto sint fugiat vero possimus quos odio dolor quisquam porro. Fugit aut quia nulla ut aliquid et.',
-    revisionDetails: 'deleniti',
-    revisionContent:
-      'Non quia magnam necessitatibus et aperiam accusamus porro. Perferendis harum consequatur. Fugiat magnam impedit doloribus. Dignissimos rerum ipsum. Est quae est a voluptates aut quo quia harum. Eaque vero dolor accusantium vel minima.',
-    isSupportAvailable: false,
+    revisionTitle: 'Dolores',
+    revisionOverview: 'deleniti',
+    revisionContent: {},
+    hasSupportAvailable: false,
     revisionSubject: RevisionSubject.English_Lan,
     revisionLevel: RevisionLevel.A_Level,
     dateUploaded:
@@ -331,11 +335,10 @@ export const revisionContentMockData: RevisionContent[] = [
   },
   {
     contentId: 4,
-    revisionTitle:
-      'Aut id et velit quis temporibus dolores et ut repellendus. Veritatis qui quibusdam modi quae fugit aut consequatur. Voluptatem fugit dolor praesentium veniam modi quia asperiores. Reprehenderit fuga sint dolor dolore animi voluptate dolorem veniam. Quidem sed quasi et nulla impedit.',
-    revisionDetails: 'odio non reprehenderit',
-    revisionContent: 'repellat nulla omnis',
-    isSupportAvailable: true,
+    revisionTitle: 'Repellendus',
+    revisionOverview: 'odio non reprehenderit',
+    revisionContent: {},
+    hasSupportAvailable: true,
     revisionSubject: RevisionSubject.English_Lan,
     revisionLevel: RevisionLevel.A_Level,
     dateUploaded:
@@ -345,12 +348,10 @@ export const revisionContentMockData: RevisionContent[] = [
   },
   {
     contentId: 111,
-    revisionTitle:
-      'Reprehenderit quidem aut explicabo minus ab omnis. Aut qui enim. Voluptatibus nostrum molestiae et. Nisi molestiae est fugiat repellat autem quibusdam deleniti doloremque. Qui placeat repellendus.\n \rCum cupiditate quia modi sunt asperiores nihil minus amet corrupti. Voluptates omnis quam nesciunt est. Quae repellat fugit qui neque ratione nihil et. Nihil voluptatem quis accusantium culpa soluta distinctio.\n \rUt et consectetur voluptatem maiores sed. Eius et consequatur vel molestiae dicta quisquam. Dolorem reiciendis qui occaecati et inventore.',
-    revisionDetails: 'sit',
-    revisionContent:
-      'Sunt nulla rerum sed recusandae. Suscipit necessitatibus non reprehenderit consequuntur facilis exercitationem sint laudantium est. Reprehenderit id odio magni enim earum. Assumenda ad voluptas atque illum ea molestiae ducimus qui labore.',
-    isSupportAvailable: false,
+    revisionTitle: 'Reprehenderit',
+    revisionOverview: 'sit',
+    revisionContent: {},
+    hasSupportAvailable: false,
     revisionSubject: RevisionSubject.English_Lan,
     revisionLevel: RevisionLevel.A_Level,
     dateUploaded: 'excepturi',
@@ -359,12 +360,11 @@ export const revisionContentMockData: RevisionContent[] = [
   },
   {
     contentId: 34,
-    revisionTitle:
-      'Labore sapiente id harum autem voluptatum occaecati et repellendus. Laudantium dolorem et perferendis ut deserunt ut et et accusamus. Dolorum voluptate qui rem fugiat consequatur facilis. Dolores rerum voluptatem.',
-    revisionDetails:
+    revisionTitle: 'Labore',
+    revisionOverview:
       'Ea natus provident officiis quas qui quas nemo architecto quibusdam. Quod tempore non est dolores vel maiores quasi. Voluptatem qui consequuntur minima optio necessitatibus odit ipsa quidem sed. Provident nesciunt maxime. Adipisci eos repellendus qui aut omnis laudantium. Nam aut cumque harum ducimus a magnam consequatur mollitia.\n \rEt deserunt quaerat non eum voluptas veniam minima. Quibusdam incidunt quam aut occaecati. Rerum ducimus officia. Rerum ut veritatis.\n \rSed est est sed enim rem officiis rerum deleniti repudiandae. Ipsum id dignissimos pariatur autem delectus consectetur iste. Eos similique dolor vel rerum non rerum aspernatur reprehenderit ipsam. Ut consequatur nihil. Tempore debitis consequuntur veniam. Cum iusto labore eveniet sint nam excepturi.',
-    revisionContent: 'Deserunt qui architecto qui.',
-    isSupportAvailable: true,
+    revisionContent: {},
+    hasSupportAvailable: true,
     revisionSubject: RevisionSubject.English_Lan,
     revisionLevel: RevisionLevel.A_Level,
     dateUploaded: 'aliquid',
@@ -373,11 +373,10 @@ export const revisionContentMockData: RevisionContent[] = [
   },
   {
     contentId: 70,
-    revisionTitle:
-      'Saepe sit exercitationem. Voluptatem aspernatur eos ducimus alias et delectus vero sunt eos. Odit asperiores magnam. Mollitia molestias molestiae.',
-    revisionDetails: 'magni',
-    revisionContent: 'vel',
-    isSupportAvailable: true,
+    revisionTitle: 'Exercitationem',
+    revisionOverview: 'magni',
+    revisionContent: {},
+    hasSupportAvailable: true,
     revisionSubject: RevisionSubject.English_Lan,
     revisionLevel: RevisionLevel.A_Level,
     dateUploaded:
@@ -387,12 +386,11 @@ export const revisionContentMockData: RevisionContent[] = [
   },
   {
     contentId: 112,
-    revisionTitle:
-      'Ullam exercitationem repellendus ipsum eos alias eos quis doloribus. Vitae nemo tempora optio blanditiis numquam. Veritatis tempore error quia iste. Qui asperiores ipsa natus aut voluptatem sit libero ullam. Est omnis saepe. Aut voluptatum consequatur nihil sunt.\n \rQuia nesciunt harum voluptates. Laudantium velit omnis inventore eius laborum quisquam. Omnis voluptatem at aliquam sed temporibus necessitatibus qui consequatur. Molestias est dolor autem necessitatibus totam labore autem est natus. Sunt animi omnis et in. Quia saepe sint aspernatur facilis voluptate est.\n \rOmnis quia hic eius quam eum quia qui et omnis. Dicta dicta pariatur impedit. Voluptas maiores quibusdam cum non.',
-    revisionDetails:
+    revisionTitle: 'Ullam',
+    revisionOverview:
       'Sit a in sint optio laboriosam consequatur ab et rerum.\nImpedit id animi quis quisquam sed blanditiis quis quod totam.\nEarum sed nihil minus tenetur rerum aliquid minima.',
-    revisionContent: 'possimus',
-    isSupportAvailable: false,
+    revisionContent: {},
+    hasSupportAvailable: false,
     revisionSubject: RevisionSubject.English_Lan,
     revisionLevel: RevisionLevel.A_Level,
     dateUploaded: 'Est maxime laboriosam iste ut corporis quisquam temporibus.',
@@ -401,11 +399,10 @@ export const revisionContentMockData: RevisionContent[] = [
   },
   {
     contentId: 72,
-    revisionTitle: 'voluptatum corporis molestiae',
-    revisionDetails: 'Eos ea aut quia ipsa.',
-    revisionContent:
-      'Impedit minus aliquid in quas omnis velit.\nDolor sint est labore voluptas molestias ut.',
-    isSupportAvailable: true,
+    revisionTitle: 'Voluptatum',
+    revisionOverview: 'Eos ea aut quia ipsa.',
+    revisionContent: {},
+    hasSupportAvailable: true,
     revisionSubject: RevisionSubject.English_Lan,
     revisionLevel: RevisionLevel.A_Level,
     dateUploaded:
@@ -416,11 +413,9 @@ export const revisionContentMockData: RevisionContent[] = [
   {
     contentId: 27,
     revisionTitle: 'impedit',
-    revisionDetails:
-      'Voluptates magnam consequatur.\nEos aperiam et mollitia atque et sit odio.\nSed ut iusto et unde quam quod id molestiae.\nUt commodi est.\nEt cumque nemo ut consequuntur.',
-    revisionContent:
-      'Est illum sit ea sunt sed et nostrum. Laborum ipsam ut voluptas reiciendis quam rem ullam quam maiores. Quaerat error id voluptates et ipsum quia.\n \rOptio voluptatem omnis quam maxime et delectus. Vero itaque animi omnis enim. Repellendus fuga vero veniam quo et.\n \rIpsa omnis nihil et debitis quia sunt. Qui fuga et dolores illum. Suscipit laborum iste quia dignissimos et atque. Mollitia soluta quis. Neque eaque maiores nostrum neque velit neque eaque qui quidem. Illo alias quos ut explicabo qui sequi aut et.',
-    isSupportAvailable: false,
+    revisionOverview: 'Voluptates',
+    revisionContent: {},
+    hasSupportAvailable: false,
     revisionSubject: RevisionSubject.English_Lan,
     revisionLevel: RevisionLevel.A_Level,
     dateUploaded: 'Rem omnis ex cum blanditiis mollitia ut nihil et et.',
@@ -431,7 +426,7 @@ export const revisionContentMockData: RevisionContent[] = [
 
 export const revisionSessionMockData: RevisionSessionT[] = [
   {
-    contentId: 2112,
+    sessionId: 2112,
     sessionTitle: 'eum',
     sessionDetails: 'qui voluptas incidunt',
     revisionSubject: RevisionSubject.English_Lan,
@@ -444,7 +439,7 @@ export const revisionSessionMockData: RevisionSessionT[] = [
     teachingYear: 54
   },
   {
-    contentId: 7341,
+    sessionId: 7341,
     sessionTitle: 'harum non explicabo',
     sessionDetails:
       'Reprehenderit repellat autem. Veniam incidunt laborum labore aut accusantium. Dolore quia in. Et quia eveniet nihil eligendi enim. Provident esse dolorem commodi voluptatibus sit atque.',
@@ -459,7 +454,7 @@ export const revisionSessionMockData: RevisionSessionT[] = [
     teachingYear: 125
   },
   {
-    contentId: 3723,
+    sessionId: 3723,
     sessionTitle:
       'Qui iure non.\nImpedit consectetur perferendis optio officiis officiis quam autem ab.\nVel deserunt explicabo reprehenderit praesentium mollitia.',
     sessionDetails: 'soluta',
@@ -474,7 +469,7 @@ export const revisionSessionMockData: RevisionSessionT[] = [
     teachingYear: 53
   },
   {
-    contentId: 9315,
+    sessionId: 9315,
     sessionTitle: 'nisi',
     sessionDetails:
       'Aut vel vitae sint iste est quia. Nihil praesentium quos voluptas et aspernatur et voluptatibus asperiores. Aliquid dignissimos ut. Voluptatem commodi quis id numquam eum sint.\n \rAutem qui voluptas accusamus quisquam quia qui cum. Eum et ipsam quia. Quibusdam nisi qui quia iste facere distinctio.\n \rNecessitatibus velit quia possimus alias. Blanditiis soluta molestiae quo eaque et dolore. Amet sequi ipsam natus nobis et expedita et quos. Eaque culpa et repellendus sapiente est. Voluptas quia saepe facilis quaerat neque molestias. Ipsam temporibus pariatur officia porro vel omnis nesciunt.',
@@ -487,7 +482,7 @@ export const revisionSessionMockData: RevisionSessionT[] = [
     teachingYear: 110
   },
   {
-    contentId: 7316,
+    sessionId: 7316,
     sessionTitle: 'tempore',
     sessionDetails: 'dolorum',
     revisionSubject: RevisionSubject.English_Lan,
@@ -499,7 +494,7 @@ export const revisionSessionMockData: RevisionSessionT[] = [
     teachingYear: 81
   },
   {
-    contentId: 1067,
+    sessionId: 1067,
     sessionTitle:
       'Consequatur ut debitis a consequatur consectetur tempora voluptatem.',
     sessionDetails:
@@ -515,7 +510,7 @@ export const revisionSessionMockData: RevisionSessionT[] = [
     teachingYear: 66
   },
   {
-    contentId: 2431,
+    sessionId: 2431,
     sessionTitle:
       'Deserunt iste vitae cupiditate. Animi et ut doloremque distinctio iure deleniti.',
     sessionDetails:
@@ -531,7 +526,7 @@ export const revisionSessionMockData: RevisionSessionT[] = [
     teachingYear: 102
   },
   {
-    contentId: 1962,
+    sessionId: 1962,
     sessionTitle:
       'Maiores sint et. Non omnis eaque impedit facere distinctio nam perspiciatis ea eligendi. Saepe autem eveniet excepturi molestias eum omnis. Nam iure et qui tenetur in modi. Beatae velit sit dicta accusantium eaque sint.\n \rSimilique labore necessitatibus et aut iste labore dolore velit. Incidunt nihil incidunt nostrum ratione tempore. Quia ipsam a dolorem. Et eligendi a et sit perferendis est minima. Porro architecto qui illum nisi ut labore iusto magni. Vel ipsam impedit fugit laudantium repudiandae maiores minus.\n \rSed voluptatem architecto culpa. Mollitia voluptate qui itaque at rerum possimus officia voluptas. Maxime commodi laboriosam iure reiciendis eos ullam quia adipisci quia.',
     sessionDetails:
@@ -547,7 +542,7 @@ export const revisionSessionMockData: RevisionSessionT[] = [
     teachingYear: 97
   },
   {
-    contentId: 1842,
+    sessionId: 1842,
     sessionTitle: 'voluptatibus quis ex',
     sessionDetails:
       'Blanditiis accusantium ullam eum temporibus eos necessitatibus doloribus numquam accusantium. Atque sit molestiae aut. Magnam ut sint nobis velit tempore qui iste. Consequatur nisi at est unde veniam quia ut consequatur quidem.\n \rNon soluta qui est occaecati iure ducimus consequatur. Tempora ipsa eligendi repellendus fugiat. Alias reprehenderit inventore autem. Laudantium voluptas dolores officiis illo non quo voluptatem. Omnis et odit cum ab exercitationem.\n \rVeniam est et possimus voluptatum architecto esse nulla et. Aut eveniet dolorem excepturi dolores sed qui. Ullam voluptatem consequatur quod quasi. Modi beatae ut ipsa quia impedit eligendi quo. Porro adipisci similique molestias perspiciatis quia quia animi architecto in.',
@@ -562,7 +557,7 @@ export const revisionSessionMockData: RevisionSessionT[] = [
     teachingYear: 30
   },
   {
-    contentId: 1241,
+    sessionId: 1241,
     sessionTitle: 'voluptate deleniti minima',
     sessionDetails:
       'Cum voluptatem dolorem repudiandae.\nQuis aliquam eos dicta ut delectus nemo.\nNulla laudantium quis consequatur qui qui iste eligendi.',

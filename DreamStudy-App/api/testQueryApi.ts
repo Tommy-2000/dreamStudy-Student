@@ -11,6 +11,12 @@ export const testQueryApi = createApi({
       infiniteQueryOptions: {
         initialPageParam: 1,
         maxPages: 10,
+        getPreviousPageParam: (
+          lastPage,
+          allPages,
+          nextPageParam,
+          allPageParams
+        ) => nextPageParam - 1,
         getNextPageParam: (lastPage, allPages, lastPageParam, allPageParams) =>
           lastPageParam + 1
       },

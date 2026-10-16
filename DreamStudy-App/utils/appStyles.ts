@@ -1,9 +1,12 @@
 import type { CalendarTheme } from '@marceloterreiro/flash-calendar';
-import { BottomTabNavigationOptions } from '@react-navigation/bottom-tabs';
-import { DrawerNavigationOptions } from '@react-navigation/drawer';
-import { HeaderOptions } from '@react-navigation/elements';
 import { Tabs } from 'expo-router';
-import Drawer from 'expo-router/drawer';
+import {
+  Drawer,
+  DrawerNavigationOptions,
+  DrawerNavigationProp
+} from 'expo-router/drawer';
+import { BottomTabNavigationOptions } from 'expo-router/js-tabs';
+import { ParamListBase, RouteProp, Theme } from 'expo-router/react-navigation';
 import { Platform } from 'react-native';
 import { StyleSheet, withUnistyles } from 'react-native-unistyles';
 import { calendarCardTokenColours as calendarTokenColours } from './appTokenColours';
@@ -118,20 +121,30 @@ export const supportScreenStyles = StyleSheet.create({
 
 // React Navigation Options
 
-export const tabScreenOptions: BottomTabNavigationOptions & HeaderOptions = {
+export const tabScreenOptions: BottomTabNavigationOptions = {
   tabBarPosition: 'right',
   headerShown: false
 };
 
-export const drawerScreenOptions: DrawerNavigationOptions & HeaderOptions = {
+export const drawerScreenOptions:
+  | DrawerNavigationOptions
+  | ((props: {
+      route: RouteProp<ParamListBase, string>;
+      navigation: DrawerNavigationProp<
+        ParamListBase,
+        string,
+        string | undefined
+      >;
+      theme: Theme;
+    }) => DrawerNavigationOptions)
+  | undefined = {
   drawerPosition: 'right',
   drawerType: 'front',
   drawerStatusBarAnimation: 'fade',
   headerShown: false
 };
 
-// Navigation Styling
-
+// Custom Navigation Components
 // withUnistyles works best for components with custom props
 // useUnistyles causes a crash when switching themes and re-rendering React Navigation components
 
@@ -147,7 +160,7 @@ export const RootTabs = withUnistyles(Tabs, theme => ({
       backgroundColor: theme.colors.foreground
     },
     tabBarIconStyle: {
-      color: theme.colors.foreground
+      backgroundColor: theme.colors.foreground
     }
   }
 }));
@@ -179,6 +192,9 @@ export const navigationStyles = StyleSheet.create({
 export const cardStyles = StyleSheet.create(theme => ({
   defaultCard: {
     borderRadius: 20
+  },
+  gapCard: {
+    padding: 20
   },
   modalHeader: {
     height: '16%',
@@ -239,17 +255,17 @@ export const cardStyles = StyleSheet.create(theme => ({
   },
   revisionCard: {
     borderRadius: 20,
-    shadowRadius: 20,
+    shadowRadius: 10,
     padding: 20,
     flex: 1,
-    backgroundColor: theme.colors.accents.storm
+    backgroundColor: theme.colors.accents.pumpkin
   },
   parallaxScrollCardHeader: {
     flex: 1
   },
   parallaxScrollCardBody: {
     backgroundColor: theme.colors.background,
-    borderRadius: 50,
+    borderRadius: 70,
     flex: 1,
     padding: 32,
     gap: 16
@@ -334,7 +350,7 @@ export const buttonStyles = StyleSheet.create(theme => ({
 export const calendarTheme: CalendarTheme = {
   rowMonth: {
     container: {
-      backgroundColor: calendarTokenColours.colours.accent,
+      backgroundColor: calendarTokenColours.colours.content.inverse.primary,
       height: 40
     },
     content: {
@@ -355,7 +371,7 @@ export const calendarTheme: CalendarTheme = {
     today: () => ({
       container: {
         borderWidth: 2,
-        borderColor: calendarTokenColours.colours.secondary
+        borderColor: calendarTokenColours.colours.accent
       }
     }),
     idle: ({ isDifferentMonth }) => ({
@@ -374,7 +390,7 @@ export const calendarTheme: CalendarTheme = {
         borderBottomRightRadius: 10
       },
       content: {
-        color: calendarTokenColours.colours.content.inverse.primary
+        color: calendarTokenColours.colours.content.primary
       }
     })
   }
