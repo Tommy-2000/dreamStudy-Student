@@ -1,4 +1,4 @@
-import { RenderSkia } from '@/components/skia/renderSkia.native';
+import { RenderSkia } from '@/components/renderSkia.native';
 import React from 'react';
 import { ActivityIndicator } from 'react-native';
 import { Card } from '../card';

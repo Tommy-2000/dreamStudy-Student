@@ -1,17 +1,17 @@
-import { MaterialIconButton } from '@/components/buttons/materialIconButton';
 import { Card } from '@/components/card';
+import { MaterialIconButton } from '@/components/materialIconButton';
 import { TextCard } from '@/components/textCard';
 import { buttonStyles, calendarTheme, cardStyles } from '@/utils/appStyles';
 import {
-  Calendar,
-  useCalendar,
-  type CalendarProps
+    Calendar,
+    useCalendar,
+    type CalendarProps
 } from '@marceloterreiro/flash-calendar';
 import { memo, useMemo } from 'react';
 
 export interface CalendarCardProps extends CalendarProps {
-  onPastMonthPress: () => void;
-  onNextMonthPress: () => void;
+  onCalendarPastMonthPress: () => void;
+  onCalendarNextMonthPress: () => void;
 }
 
 const ICON_SIZE = 20;
@@ -30,29 +30,29 @@ export const CalendarCard = memo((calendarProps: CalendarCardProps) => {
       <Calendar.VStack>
         <Calendar.HStack
           alignItems="center"
-          justifyContent="space-around"
+          justifyContent="space-evenly"
           width="100%">
           <MaterialIconButton
-            iconName="arrow-left"
+            iconName="arrow-back"
             iconSize={ICON_SIZE}
-            onPress={() => {}}
+            onPress={calendarProps.onCalendarPastMonthPress}
             accessibilityHint="Arrow Left"
             style={buttonStyles.iconButton}
           />
           <TextCard>{calendarRowMonth}</TextCard>
           <MaterialIconButton
-            iconName="arrow-right"
+            iconName="arrow-forward"
             iconSize={ICON_SIZE}
-            onPress={() => {}}
+            onPress={calendarProps.onCalendarNextMonthPress}
             accessibilityHint="Arrow Right"
             style={buttonStyles.iconButton}
           />
         </Calendar.HStack>
-
-        <Calendar.Row.Week spacing={16}>
+        <Card style={cardStyles.gapCard} />
+        <Calendar.Row.Week spacing={20}>
           {weekDaysList.map((day, i) => (
             <Calendar.Item.WeekName
-              height={25}
+              height={35}
               key={i}
               theme={calendarProps.theme?.itemWeekName}>
               {day}

@@ -1,7 +1,7 @@
 import { MaterialIconButtonProps } from '@/utils/types/buttonProps';
 import Ionicons from '@react-native-vector-icons/ionicons';
 import { PressableScale } from 'pressto';
-import { TextCard } from '../textCard';
+import { TextCard } from './textCard';
 
 export function MaterialIconButton({
   onPress,

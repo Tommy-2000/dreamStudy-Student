@@ -193,6 +193,9 @@ export const cardStyles = StyleSheet.create(theme => ({
   defaultCard: {
     borderRadius: 20
   },
+  gapCard: {
+    padding: 20
+  },
   modalHeader: {
     height: '16%',
     backgroundColor: theme.colors.background,
@@ -347,7 +350,7 @@ export const buttonStyles = StyleSheet.create(theme => ({
 export const calendarTheme: CalendarTheme = {
   rowMonth: {
     container: {
-      backgroundColor: calendarTokenColours.colours.accent,
+      backgroundColor: calendarTokenColours.colours.content.inverse.primary,
       height: 40
     },
     content: {
@@ -368,7 +371,7 @@ export const calendarTheme: CalendarTheme = {
     today: () => ({
       container: {
         borderWidth: 2,
-        borderColor: calendarTokenColours.colours.secondary
+        borderColor: calendarTokenColours.colours.accent
       }
     }),
     idle: ({ isDifferentMonth }) => ({
@@ -387,7 +390,7 @@ export const calendarTheme: CalendarTheme = {
         borderBottomRightRadius: 10
       },
       content: {
-        color: calendarTokenColours.colours.content.inverse.primary
+        color: calendarTokenColours.colours.content.primary
       }
     })
   }

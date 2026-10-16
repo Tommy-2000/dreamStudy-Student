@@ -5,14 +5,13 @@
  */
 
 import {
-    CanvasProps,
-    Fill,
-    Shader,
-    Skia,
-    SkRuntimeEffect,
-    useClock
+  CanvasProps,
+  Fill,
+  Shader,
+  Skia,
+  SkRuntimeEffect,
+  useClock
 } from '@shopify/react-native-skia';
-import React from 'react';
 import { useWindowDimensions } from 'react-native';
 import { useDerivedValue } from 'react-native-reanimated';
 import { SkiaCanvas } from './skiaCanvas';
@@ -49,7 +48,7 @@ vec4 main(vec2 fragCoord) {
 // Ensure that the SkRuntimeEffect type has no nulls
 type SkRuntimeEffectNN = NonNullable<SkRuntimeEffect>;
 
-export default function SkiaPlaceholder({
+export default function SkiaGradient({
   style,
   color = [1, 1, 1],
   speed = 1.0,

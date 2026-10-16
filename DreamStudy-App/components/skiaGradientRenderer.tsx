@@ -1,10 +1,10 @@
 import React from 'react';
 import { ActivityIndicator } from 'react-native';
 import { Card } from './card';
-import { RenderSkia } from './skia/renderSkia';
+import { RenderSkia } from './renderSkia';
 
 // On web, any Skia components have to wait before the canvaskit file has loaded to render properly
-const SkiaGradient = React.lazy(() => import('@/components/skia/skiaGradient'));
+const SkiaGradient = React.lazy(() => import('@/components/skiaGradient'));
 
 export function SkiaGradientRenderer() {
   return (

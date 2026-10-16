@@ -1,7 +1,7 @@
 import { buttonStyles } from '@/utils/appStyles';
 import Ionicons from '@react-native-vector-icons/ionicons';
 import { createAnimatedPressable } from 'pressto';
-import { Card } from '../card';
+import { Card } from './card';
 
 const PressableRipple = createAnimatedPressable(progress => {
   'worklet';

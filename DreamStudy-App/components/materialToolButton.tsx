@@ -1,7 +1,7 @@
 import { MaterialButtonProps } from '@/utils/types/buttonProps';
 import { PressableScale } from 'pressto';
-import { Card } from '../card';
-import { TextCard } from '../textCard';
+import { Card } from './card';
+import { TextCard } from './textCard';
 
 export function MaterialToolButton({
   onPress,

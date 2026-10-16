@@ -15,11 +15,11 @@ import {
   SkRect,
   useCanvasRef
 } from '@shopify/react-native-skia';
-import React, { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Gesture } from 'react-native-gesture-handler';
 
 import { Card } from '@/components/card';
-import { SkiaGestureCanvas } from '@/components/skia/skiaGestureCanvas';
+import { SkiaGestureCanvas } from '@/components/skiaGestureCanvas';
 import { SkiaSelectionFrame } from './skiaSelectionFrame';
 import { NoteToolbarCard } from './toolbar/noteToolbarCard';
 
